@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+     <style>
+  * {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  body {
+    margin: 0;
+    background: #0f0f0f;
+    color: #00ffcc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #con {
+    background: #1a1a1a;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #00ffcc88;
+    width: 400px;
+    text-align: center;
+    border: 1px solid #00ffcc55;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+    color: #00ffcc;
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px #00ffcc;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    background: #111;
+    color: #00ffcc;
+    border: 1px solid #00ffcc44;
+    border-radius: 10px;
+    transition: 0.3s ease;
+  }
+
+  input::placeholder {
+    color: #00ffcc88;
+  }
+
+  input:focus {
+    border-color: #00ffcc;
+    outline: none;
+    box-shadow: 0 0 8px #00ffccaa;
+    background: #0c0c0c;
+  }
+
+  #btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #00ffcc22;
+    color: #00ffcc;
+    border: 1px solid #00ffcc88;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  #btn:hover {
+    background: #00ffcc44;
+    box-shadow: 0 0 10px #00ffccaa;
+  }
+</style>
+
+
+
+    </style>
+  </head>
+  <body>
+    <div id="con">
+      <h1>Employee Management Portal</h1>
+      <form id="empform">
+  <input id="name" placeholder="Name" />
+  <input id="email" placeholder="Email" />
+  <input id="role" placeholder="Role" />
+  <button id="btn">Add Employee</button>
+</form>
+
+<table border="1">
+  <thead>
+    <tr><th>Name</th><th>Email</th><th>Role</th><th>Edit</th><th>Delete</th></tr>
+  </thead>
+  <tbody id="tbl"></tbody>
+</table>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
